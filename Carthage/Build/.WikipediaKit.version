@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "WikipediaKit",
+      "hash" : "09604f1bbc69d4a63970f7bf82e9f4a7b03dbc12db8b3f72346951411c27a953"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "WikipediaKit",
+      "hash" : "f3bb0207dd4c784182f575b6f918ce35a31e1be2419ef5e9117c469ccfe8f937"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "WikipediaKit",
+      "hash" : "cd5ba6c130de1121e60f84c98be8967292a2be1700c075d4f315126caeb8768e"
+    }
+  ],
+  "commitish" : "b42ba5f83f31a496ff1e05ec4ac718e3a57a1dcc",
+  "iOS" : [
+    {
+      "name" : "WikipediaKit",
+      "hash" : "956b09605edece31fd2ca5cbe0b33bf0b4c7ca9b9f4b408140c025ff7afbcfa1"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module WikipediaKit {
+  umbrella header "WikipediaKit.h"
+
+  export *
+  module * { export * }
+}
+
+module WikipediaKit.Swift {
+    header "WikipediaKit-Swift.h"
+    requires objc
+}

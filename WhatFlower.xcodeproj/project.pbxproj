@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AAB41D62156B77C00BBA38F /* OxfordFlowerImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB41D52156B77C00BBA38F /* OxfordFlowerImageClassifier.mlmodel */; };
+		6AAB41DB2156C51F00BBA38F /* WikipediaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAB41DA2156C51E00BBA38F /* WikipediaKit.framework */; };
 		6AB280D9215290DA00976DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB280D8215290DA00976DFC /* AppDelegate.swift */; };
 		6AB280DB215290DA00976DFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB280DA215290DA00976DFC /* ViewController.swift */; };
 		6AB280DE215290DA00976DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB280DC215290DA00976DFC /* Main.storyboard */; };
 		6AB280E0215290DC00976DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB280DF215290DC00976DFC /* Assets.xcassets */; };
 		6AB280E3215290DC00976DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB280E1215290DC00976DFC /* LaunchScreen.storyboard */; };
+		6AB280EB2152947800976DFC /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB280EA2152947800976DFC /* NetworkConnectivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6AAB41D52156B77C00BBA38F /* OxfordFlowerImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = OxfordFlowerImageClassifier.mlmodel; sourceTree = "<group>"; };
+		6AAB41DA2156C51E00BBA38F /* WikipediaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WikipediaKit.framework; path = Carthage/Build/iOS/WikipediaKit.framework; sourceTree = SOURCE_ROOT; };
 		6AB280D5215290DA00976DFC /* WhatFlower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatFlower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB280D8215290DA00976DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AB280DA215290DA00976DFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		6AB280DF215290DC00976DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB280E2215290DC00976DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AB280E4215290DC00976DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB280EA2152947800976DFC /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAB41DB2156C51F00BBA38F /* WikipediaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AAB41D72156BAA000BBA38F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AB280DA215290DA00976DFC /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6AAB41D82156BAAD00BBA38F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AB280EA2152947800976DFC /* NetworkConnectivity.swift */,
+				6AAB41D52156B77C00BBA38F /* OxfordFlowerImageClassifier.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6AB280CC215290DA00976DFC = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +79,13 @@
 			isa = PBXGroup;
 			children = (
 				6AB280D8215290DA00976DFC /* AppDelegate.swift */,
-				6AB280DA215290DA00976DFC /* ViewController.swift */,
+				6AAB41D72156BAA000BBA38F /* View Controllers */,
 				6AB280DC215290DA00976DFC /* Main.storyboard */,
+				6AAB41D82156BAAD00BBA38F /* Models */,
 				6AB280DF215290DC00976DFC /* Assets.xcassets */,
 				6AB280E1215290DC00976DFC /* LaunchScreen.storyboard */,
 				6AB280E4215290DC00976DFC /* Info.plist */,
+				6AAB41DA2156C51E00BBA38F /* WikipediaKit.framework */,
 			);
 			path = WhatFlower;
 			sourceTree = "<group>";
@@ -74,6 +100,7 @@
 				6AB280D1215290DA00976DFC /* Sources */,
 				6AB280D2215290DA00976DFC /* Frameworks */,
 				6AB280D3215290DA00976DFC /* Resources */,
+				6AAB41DC2156C76B00BBA38F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					6AB280D4215290DA00976DFC = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,12 +158,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6AAB41DC2156C76B00BBA38F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WikipediaKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AB280D1215290DA00976DFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAB41D62156B77C00BBA38F /* OxfordFlowerImageClassifier.mlmodel in Sources */,
 				6AB280DB215290DA00976DFC /* ViewController.swift in Sources */,
+				6AB280EB2152947800976DFC /* NetworkConnectivity.swift in Sources */,
 				6AB280D9215290DA00976DFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +335,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L32T76JN9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WhatFlower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = codes.tally.WhatFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,6 +357,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L32T76JN9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WhatFlower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = codes.tally.WhatFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
